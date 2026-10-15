@@ -8,3 +8,99 @@
 .certificate-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:17px}.certificate-card{border:1px solid var(--line);border-radius:8px;padding:23px;min-height:280px;display:flex;flex-direction:column;background:white;transition:box-shadow .2s,transform .2s}.certificate-card:hover{transform:translateY(-3px);box-shadow:0 12px 32px rgba(18,50,62,.08)}.certificate-card[hidden]{display:none}.card-top{display:flex;justify-content:space-between;align-items:center}.category{font-size:.72rem;font-weight:700;color:var(--blue);background:var(--pale);padding:5px 9px;border-radius:3px}.card-number{font-size:.8rem;color:#a0adb4}.file-icon{display:grid;place-items:center;width:43px;height:48px;border:1px solid #bfd8dd;border-radius:4px;margin:25px 0 16px;color:var(--blue);font-size:.72rem;font-weight:800;position:relative}.file-icon:after{content:'';position:absolute;width:10px;height:10px;right:-1px;top:-1px;background:var(--pale);border-left:1px solid #bfd8dd;border-bottom:1px solid #bfd8dd}.certificate-card h3{font:700 1.08rem/1.4 Manrope,sans-serif;margin:0 0 6px}.institution,.date{margin:0;color:var(--muted);font-size:.86rem}.date{font-size:.8rem;margin-top:3px}.card-link{display:flex;justify-content:space-between;border-top:1px solid var(--line);padding-top:16px;margin-top:22px;color:var(--blue);font-weight:700;font-size:.85rem}.note{margin-top:23px;font-size:.83rem;color:var(--muted);max-width:850px}.profile-band{background:#f0f6f6;padding:70px 0}.profile-inner{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}.profile-copy{max-width:510px;color:#53646d}.profile-copy p:first-child{margin-top:0;color:var(--ink);font-size:1.1rem}.edit-hint{font-size:.78rem!important;color:#8a979d!important;font-style:italic}.contact{text-align:center}.contact .muted{margin:14px auto 20px}.contact-links{display:flex;justify-content:center;gap:25px;flex-wrap:wrap;font-weight:700;color:var(--blue)}footer{background:var(--dark);color:#d5e2e5;font-size:.8rem}.footer-inner{display:flex;justify-content:space-between;gap:20px;padding:20px 0}
 @media(max-width:760px){.hero{min-height:0}.nav{height:70px}.nav-links{gap:14px;font-size:.82rem}.hero-content{padding:58px 0 68px}.hero h1{letter-spacing:-1.8px}.orb-one{right:-260px}.orb-two{right:-180px}.section{padding:60px 0}.section-heading{display:block}.section-heading .muted{margin-bottom:0}.certificate-grid{grid-template-columns:1fr}.certificate-card{min-height:250px}.profile-inner{grid-template-columns:1fr;gap:20px}.profile-band{padding:55px 0}.footer-inner{flex-direction:column;gap:5px}}
 @media(max-width:420px){.nav-links{gap:10px}.nav-links a{font-size:.76rem}.container{width:calc(100% - 30px)}}
+
+.certificaciones {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.certificaciones-header {
+  max-width: 650px;
+  margin-bottom: 36px;
+}
+
+.subtitulo {
+  font-size: 12px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  color: #64748b;
+}
+
+.certificaciones-header h2 {
+  font-size: clamp(28px, 4vw, 40px);
+  margin: 12px 0;
+}
+
+.certificaciones-header p {
+  line-height: 1.7;
+  color: #64748b;
+}
+
+.certificaciones-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+}
+
+.certificado {
+  padding: 26px;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+  background: #ffffff;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.certificado:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 28px rgba(15, 23, 42, 0.08);
+}
+
+.certificado-categoria {
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #64748b;
+}
+
+.certificado h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 18px 0 10px;
+  color: #172033;
+}
+
+.certificado p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #64748b;
+  min-height: 48px;
+}
+
+.certificado a {
+  display: inline-block;
+  margin-top: 12px;
+  color: #1d4ed8;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.certificado a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 800px) {
+  .certificaciones-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 520px) {
+  .certificaciones-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .certificaciones {
+    padding: 55px 18px;
+  }
+}
