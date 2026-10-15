@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portafolio de certificados y formación profesional de Jair Arias, estudiante de Ingeniería Mecánica.">
+  <meta name="author" content="Jair Arias">
+  <meta name="theme-color" content="#10232e">
+  <title>Jair Arias | Certificados y formación</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="hero" id="inicio">
+    <nav class="nav container" aria-label="Navegación principal">
+      <a class="brand" href="#inicio" aria-label="Inicio">JA<span>.</span></a>
+      <div class="nav-links">
+        <a href="#certificados">Certificados</a>
+        <a href="#perfil">Perfil</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+    </nav>
+    <section class="hero-content container">
+      <p class="eyebrow">PORTAFOLIO PROFESIONAL</p>
+      <h1>Jair Arias<span class="heading-break"><br></span><span class="accent">Certificados y formación</span></h1>
+      <p class="intro">Estudiante de Ingeniería Mecánica interesado en el mantenimiento industrial, la confiabilidad de equipos y la mejora continua. Aquí presento los cursos y certificaciones que complementan mi formación profesional.</p>
+      <a class="button" href="#certificados">Explorar certificados <span aria-hidden="true">↓</span></a>
+    </section>
+    <div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div>
+  </header>
+
+  <main>
+    <section class="section container" id="certificados">
+      <div class="section-heading">
+        <div><p class="eyebrow">FORMACIÓN CONTINUA</p><h2>Mis certificados</h2></div>
+        <p class="muted">Consulta los cursos, constancias y certificaciones de mi desarrollo académico y profesional.</p>
+      </div>
+      <div class="filters" role="group" aria-label="Filtrar certificados">
+        <button class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="filter" data-filter="mantenimiento" aria-pressed="false">Mantenimiento</button>
+        <button class="filter" data-filter="software" aria-pressed="false">Software</button>
+        <button class="filter" data-filter="gestion" aria-pressed="false">Gestión y seguridad</button>
+      </div>
+
+      <!--
+        AÑADIR UN CERTIFICADO:
+        1. Sube el PDF a la carpeta "certificados".
+        2. Duplica una tarjeta <article class="certificate-card">.
+        3. Actualiza título, institución, año, categoría y el href del PDF.
+        Categorías válidas: mantenimiento, software, gestion.
+      -->
+      <div class="certificate-grid">
+        <article class="certificate-card" data-category="software">
+          <div class="card-top"><span class="category">Software</span><span class="card-number">01</span></div>
+          <div class="file-icon" aria-hidden="true">PDF</div>
+          <h3>Nombre del curso o certificado</h3>
+          <p class="institution">Nombre de la institución</p>
+          <p class="date">Año: 2026</p>
+          <a class="card-link" href="certificados/ejemplo.pdf" target="_blank" rel="noopener">Ver certificado <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="certificate-card" data-category="mantenimiento">
+          <div class="card-top"><span class="category">Mantenimiento</span><span class="card-number">02</span></div>
+          <div class="file-icon" aria-hidden="true">PDF</div>
+          <h3>Nombre del curso o certificado</h3>
+          <p class="institution">Nombre de la institución</p>
+          <p class="date">Año: 2026</p>
+          <a class="card-link" href="certificados/ejemplo.pdf" target="_blank" rel="noopener">Ver certificado <span aria-hidden="true">↗</span></a>
+        </article>
+        <article class="certificate-card" data-category="gestion">
+          <div class="card-top"><span class="category">Gestión y seguridad</span><span class="card-number">03</span></div>
+          <div class="file-icon" aria-hidden="true">PDF</div>
+          <h3>Nombre del curso o certificado</h3>
+          <p class="institution">Nombre de la institución</p>
+          <p class="date">Año: 2026</p>
+          <a class="card-link" href="certificados/ejemplo.pdf" target="_blank" rel="noopener">Ver certificado <span aria-hidden="true">↗</span></a>
+        </article>
+      </div>
+      <p class="note"><strong>Nota:</strong> las tarjetas son ejemplos de estructura. Reemplázalas por tus certificados reales antes de compartir el sitio. Evita publicar datos personales sensibles que no sean necesarios.</p>
+    </section>
+
+    <section class="profile-band" id="perfil">
+      <div class="container profile-inner">
+        <div><p class="eyebrow">SOBRE MÍ</p><h2>Aprender para<br>mejorar cada proceso.</h2></div>
+        <div class="profile-copy">
+          <p>Soy estudiante de Ingeniería Mecánica con interés en la gestión del mantenimiento industrial, la planificación y la confiabilidad de equipos.</p>
+          <p>Este portafolio reúne cursos y certificaciones que complementan mi formación universitaria y mi desarrollo profesional.</p>
+          <p class="edit-hint">Puedes actualizar esta descripción conforme avances en tu formación.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container contact" id="contacto">
+      <p class="eyebrow">CONECTEMOS</p>
+      <h2>Conoce más sobre mi perfil profesional</h2>
+      <p class="muted">Visita mi perfil de LinkedIn para conocer mi trayectoria y formación.</p>
+      <div class="contact-links">
+        <a href="https://www.linkedin.com/in/jair-arias-llontop/" target="_blank" rel="noopener noreferrer">Mi LinkedIn ↗</a>
+        <a href="https://github.com/JairArias20" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </div>
+    </section>
+  </main>
+  <footer><div class="container footer-inner"><span>© 2026 Jair Arias</span><span>Publicado con GitHub Pages</span></div></footer>
+  <script src="script.js"></script>
+</body>
+</html>
