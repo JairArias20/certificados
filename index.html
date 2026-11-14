@@ -3,190 +3,330 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portafolio de certificados y formación profesional de Jair Arias, estudiante de Ingeniería Mecánica.">
-  <meta name="author" content="Jair Arias">
-  <meta name="theme-color" content="#10232e">
-  <title>Jair Arias | Certificados y formación</title>
+  <meta name="description" content="Portafolio profesional, proyectos y certificaciones de Jair A. Arias Llontop, estudiante de Ingeniería Mecánica especializado en planeamiento de mantenimiento y gestión de activos.">
+  <meta name="author" content="Jair A. Arias Llontop">
+  <meta name="theme-color" content="#0c1e2c">
+  <title>Jair Arias | Portafolio Profesional y Certificaciones</title>
   <link rel="stylesheet" href="styles.css">
 </head>
-  <body>
+<body>
   <header class="hero" id="inicio">
     <nav class="nav container" aria-label="Navegación principal">
       <a class="brand" href="#inicio" aria-label="Inicio">JA<span>.</span></a>
       <div class="nav-links">
         <a href="#certificados">Certificados</a>
-        <a href="#perfil">Perfil</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#perfil">Perfil y Habilidades</a>
         <a href="#contacto">Contacto</a>
       </div>
     </nav>
+
     <section class="hero-content container">
-      <p class="eyebrow">PORTAFOLIO PROFESIONAL</p>
-      <h1>Jair Arias<span class="heading-break"><br></span><span class="accent">Certificados y formación</span></h1>
-      <p class="intro">Estudiante de Ingeniería Mecánica interesado en el mantenimiento industrial, la confiabilidad de equipos y la mejora continua. Aquí presento los cursos y certificaciones que complementan mi formación profesional.</p>
-      <a class="button" href="#certificados">Explorar certificados <span aria-hidden="true">↓</span></a>
+      <div class="badge-row">
+        <span class="status-badge">Ingeniería Mecánica · UNAC</span>
+        <span class="status-badge merit">Tercio Superior · 7.° Ciclo</span>
+        <span class="status-badge focus">Mantenimiento y Confiabilidad</span>
+      </div>
+      <h1>Jair A. Arias<br><span class="accent">Llontop</span></h1>
+      <p class="intro">
+        Enfocado en <strong>planeamiento de mantenimiento, gestión de activos (ISO 55000) y confiabilidad</strong>. 
+        Portafolio técnico con mis certificaciones verificables, proyectos de diseño mecánico y herramientas de análisis de datos.
+      </p>
+      <div class="hero-actions">
+        <a class="button primary" href="#certificados">Ver certificaciones <span>↓</span></a>
+        <a class="button secondary" href="#proyectos">Proyectos académicos</a>
+      </div>
     </section>
-    <div class="hero-orb orb-one" aria-hidden="true"></div><div class="hero-orb orb-two" aria-hidden="true"></div>
+
+    <div class="hero-orb orb-one" aria-hidden="true"></div>
+    <div class="hero-orb orb-two" aria-hidden="true"></div>
   </header>
 
   <main>
+    <!-- SECCIÓN DE CERTIFICACIONES -->
     <section class="section container" id="certificados">
       <div class="section-heading">
-        <div><p class="eyebrow">FORMACIÓN CONTINUA</p><h2>Mis certificados</h2></div>
-        <p class="muted">Consulta los cursos, constancias y certificaciones de mi desarrollo académico y profesional.</p>
+        <div>
+          <p class="eyebrow">FORMACIÓN CONTINUA Y RESPALDO TÉCNICO</p>
+          <h2>Certificaciones</h2>
+        </div>
+        <p class="muted">Diplomas y constancias verificables en planificación del mantenimiento, gestión de activos, software e idiomas.</p>
       </div>
+
       <div class="filters" role="group" aria-label="Filtrar certificados">
-        <button class="filter active" data-filter="todos" aria-pressed="true">Todos</button>
+        <button class="filter active" data-filter="todos" aria-pressed="true">Todos (7)</button>
         <button class="filter" data-filter="mantenimiento" aria-pressed="false">Mantenimiento</button>
+        <button class="filter" data-filter="gestion" aria-pressed="false">Gestión de Activos</button>
         <button class="filter" data-filter="software" aria-pressed="false">Software</button>
-        <button class="filter" data-filter="gestion" aria-pressed="false">Gestión</button>
         <button class="filter" data-filter="idiomas" aria-pressed="false">Idiomas</button>
       </div>
 
-      <!--
-        AÑADIR UN CERTIFICADO:
-        1. Sube el PDF a la carpeta "certificados".
-        2. Duplica una tarjeta <article class="certificate-card">.
-        3. Actualiza título, institución, año, categoría y el href del PDF.
-        Categorías válidas: mantenimiento, software, gestion.
-      -->
-<div class="certificate-grid">
+      <div class="certificate-grid">
+        <!-- 01 -->
+        <article class="certificate-card" data-category="mantenimiento">
+          <div class="card-top">
+            <span class="category">Mantenimiento</span>
+            <span class="card-number">01</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Programa de Planner de Mantenimiento</h3>
+            <p class="institution">NETCRAM</p>
+            <div class="meta-tags">
+              <span>Planificación y Programación</span>
+              <span>Jul 2026</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/planner-netcram.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
 
-  <article class="certificate-card" data-category="software">
-    <div class="card-top">
-      <span class="category">Software</span>
-      <span class="card-number">01</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Excel</h3>
-    <p class="institution">IDAT</p>
-    <p class="date">Certificación en Excel</p>
-    <a class="card-link" href="certificados/excel-idat.pdf"
-       target="_blank" rel="noopener noreferrer">
-      Ver certificado <span aria-hidden="true">↗</span>
-    </a>
-  </article>
+        <!-- 02 -->
+        <article class="certificate-card" data-category="gestion">
+          <div class="card-top">
+            <span class="category">Gestión de Activos</span>
+            <span class="card-number">02</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Gestión de Activos y Confiabilidad</h3>
+            <p class="institution">STRATTON</p>
+            <div class="meta-tags">
+              <span>Norma ISO 55000</span>
+              <span>Jul 2026</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/gestion-activos-stratton.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
 
-  <article class="certificate-card" data-category="software">
-    <div class="card-top">
-      <span class="category">Software</span>
-      <span class="card-number">02</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Excel</h3>
-    <p class="institution">Microsoft</p>
-    <p class="date">Certificación en Excel</p>
-    <a class="card-link" href="certificados/excel-microsoft.pdf"
-       target="_blank" rel="noopener noreferrer">
-      Ver certificado <span aria-hidden="true">↗</span>
-    </a>
-  </article>
+        <!-- 03 -->
+        <article class="certificate-card" data-category="software">
+          <div class="card-top">
+            <span class="category">Software</span>
+            <span class="card-number">03</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Especialista en Microsoft Excel</h3>
+            <p class="institution">IDAT</p>
+            <div class="meta-tags">
+              <span>Nivel Avanzado</span>
+              <span>Jul 2026</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/excel-idat.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
 
-  <article class="certificate-card" data-category="mantenimiento">
-    <div class="card-top">
-      <span class="category">Mantenimiento</span>
-      <span class="card-number">03</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Simposio de Tribología</h3>
-    <p class="institution">Universidad Nacional del Callao (UNAC)</p>
-    <p class="date">Certificado de participación</p>
-    <a class="card-link" href="certificados/tribologia-unac.pdf"
-       target="_blank" rel="noopener noreferrer">
-      Ver certificado <span aria-hidden="true">↗</span>
-    </a>
-  </article>
+        <!-- 04 -->
+        <article class="certificate-card" data-category="software">
+          <div class="card-top">
+            <span class="category">Software</span>
+            <span class="card-number">04</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Certificación en Microsoft Excel</h3>
+            <p class="institution">Microsoft</p>
+            <div class="meta-tags">
+              <span>Análisis de Datos</span>
+              <span>Certificación Oficial</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/excel-microsoft.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
 
-  <article class="certificate-card" data-category="mantenimiento">
-    <div class="card-top">
-      <span class="category">Mantenimiento</span>
-      <span class="card-number">04</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Planner de Mantenimiento en Mina</h3>
-    <p class="institution">Simposio — UNAC</p>
-    <p class="date">Certificado de participación</p>
-    <a class="card-link" href="certificados/planner-mina-unac.pdf"
-       target="_blank" rel="noopener noreferrer">
-      Ver certificado <span aria-hidden="true">↗</span>
-    </a>
-  </article>
+        <!-- 05 -->
+        <article class="certificate-card" data-category="mantenimiento">
+          <div class="card-top">
+            <span class="category">Mantenimiento</span>
+            <span class="card-number">05</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Simposio: Tribología y Lubricación</h3>
+            <p class="institution">UNAC — FIME</p>
+            <div class="meta-tags">
+              <span>Certificación ISO 18436-4</span>
+              <span>Simposio Internacional</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/tribologia-unac.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
 
-  <article class="certificate-card" data-category="mantenimiento">
-    <div class="card-top">
-      <span class="category">Mantenimiento</span>
-      <span class="card-number">05</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Planner de Mantenimiento</h3>
-    <p class="institution">NETCRAM</p>
-    <p class="date">Formación en planificación del mantenimiento</p>
-    <a class="card-link" href="certificados/planner-netcram.pdf"
-       target="_blank" rel="noopener noreferrer">
-      Ver certificado <span aria-hidden="true">↗</span>
-    </a>
-  </article>
+        <!-- 06 -->
+        <article class="certificate-card" data-category="mantenimiento">
+          <div class="card-top">
+            <span class="category">Mantenimiento</span>
+            <span class="card-number">06</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Simposio: Planner de Mantenimiento</h3>
+            <p class="institution">UNAC — FIME</p>
+            <div class="meta-tags">
+              <span>Sector Minero, Eléctrico e Industrial</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/planner-mina-unac.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
 
-  <article class="certificate-card" data-category="gestion">
-    <div class="card-top">
-      <span class="category">Gestión</span>
-      <span class="card-number">06</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Gestión de Activos y Mantenimiento</h3>
-    <p class="institution">STRATTON</p>
-    <p class="date">Formación en gestión de activos</p>
+        <!-- 07 -->
+        <article class="certificate-card" data-category="idiomas">
+          <div class="card-top">
+            <span class="category">Idiomas</span>
+            <span class="card-number">07</span>
+          </div>
+          <div class="card-body">
+            <div class="file-icon" aria-hidden="true">PDF</div>
+            <h3>Curso de Inglés — Básico 12</h3>
+            <p class="institution">ICPNA</p>
+            <div class="meta-tags">
+              <span>Fase Básica Concluida</span>
+              <span>Oct 2026</span>
+            </div>
+          </div>
+          <a class="card-link" href="certificados/ingles-icpna.pdf" target="_blank" rel="noopener noreferrer">
+            Abrir certificado <span>↗</span>
+          </a>
+        </article>
+      </div>
 
-<a class="card-link"
-   href="certificados/gestion-activos-stratton.pdf"
-   target="_blank"
-   rel="noopener noreferrer">
-  Ver certificado <span aria-hidden="true">↗</span>
-</a>
-
-  </article>
-  
-  <article class="certificate-card" data-category="idiomas">
-    <div class="card-top">
-      <span class="category">Idiomas</span>
-      <span class="card-number">07</span>
-    </div>
-    <div class="file-icon" aria-hidden="true">PDF</div>
-    <h3>Nivel Inglés</h3>
-    <p class="institution">IPCNA</p>
-    <p class="date">Diploma de culminación</p>
-    
-  <a class="card-link"
-     href="certificados/ingles-icpna.pdf"
-     target="_blank"
-     rel="noopener noreferrer">
-    Ver certificado <span aria-hidden="true">↗</span>
-    </a>
-  </article>
-</div>
-
+      <!-- FORMACIÓN ACTUAL EN CURSO -->
+      <div class="ongoing-box">
+        <div class="ongoing-header">
+          <span class="pulse-dot" aria-hidden="true"></span>
+          <h3>Formación complementaria en curso · OTI UNI (Nov. 2026)</h3>
+        </div>
+        <div class="ongoing-grid">
+          <div class="ongoing-item">
+            <strong>Lean Manufacturing</strong>
+            <span>Mejora continua y eficiencia operativa</span>
+          </div>
+          <div class="ongoing-item">
+            <strong>Power BI — Nivel Básico</strong>
+            <span>Visualización de KPIs e indicadores</span>
+          </div>
+          <div class="ongoing-item">
+            <strong>MS Project</strong>
+            <span>Aplicado a la Gestión de Proyectos</span>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <section class="profile-band" id="perfil">
-      <div class="container profile-inner">
-        <div><p class="eyebrow">SOBRE MÍ</p><h2>Aprender para<br>mejorar cada proceso.</h2></div>
-        <div class="profile-copy">
-          <p>Soy estudiante de Ingeniería Mecánica con interés en la gestión del mantenimiento industrial, la planificación y la confiabilidad de equipos.</p>
-          <p>Este portafolio reúne cursos y certificaciones que complementan mi formación universitaria y mi desarrollo profesional.</p>
-      </div>
+    <!-- SECCIÓN DE PROYECTOS ACADÉMICOS -->
+    <section class="projects-band" id="proyectos">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">EXPERIENCIA PRÁCTICA</p>
+            <h2>Proyectos Académicos</h2>
+          </div>
+          <p class="muted">Cálculo de ingeniería, selección de elementos mecánicos y mantenimiento práctico.</p>
+        </div>
+
+        <div class="projects-grid">
+          <div class="project-item">
+            <span class="project-course">Diseño de Elementos de Máquinas I · 2026</span>
+            <h3>Diseño conceptual del sistema motriz de una transportadora de cadena</h3>
+            <p>Selección técnica de cadenas, catarinas, ejes y elementos de transmisión, junto con el desarrollo de la memoria de cálculo de ingeniería del sistema motriz.</p>
+          </div>
+
+          <div class="project-item">
+            <span class="project-course">Motores de Combustión Interna · 2026</span>
+            <h3>Desmontaje, revisión y montaje del tablero de un motor Toyota</h3>
+            <p>Participación grupal en el desmontaje técnico, inspección detallada de componentes e instrumentos y montaje funcional del tablero del motor.</p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="section container contact" id="contacto">
-      <p class="eyebrow">CONECTEMOS</p>
-      <h2>Conoce más sobre mi perfil profesional</h2>
-      <p class="muted">Visita mi perfil de LinkedIn para conocer mi trayectoria y formación.</p>
-      <div class="contact-links">
-        <a href="https://www.linkedin.com/in/jair-arias-llontop/" target="_blank" rel="noopener noreferrer">Mi LinkedIn ↗</a>
-        <a href="https://github.com/JairArias20" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+    <!-- PERFIL Y HABILIDADES -->
+    <section class="section container" id="perfil">
+      <div class="profile-grid">
+        <div>
+          <p class="eyebrow">PERFIL PROFESIONAL</p>
+          <h2>Gestión eficiente de equipos y confiabilidad operativa.</h2>
+          <p class="profile-text">
+            Estudiante de 7.° ciclo de Ingeniería Mecánica en la Universidad Nacional del Callao, perteneciente al <strong>Tercio Superior General</strong>. 
+            Cuento con base sólida en planeamiento y programación del mantenimiento, gestión de activos bajo enfoque ISO 55000 y análisis de datos en Excel avanzado.
+          </p>
+          <p class="profile-text">
+            Busco una oportunidad de prácticas preprofesionales en <strong>mantenimiento, planeamiento o confiabilidad</strong> para aportar pensamiento analítico y mejora continua.
+          </p>
+        </div>
+
+        <div class="skills-box">
+          <h3>Conocimientos y Herramientas</h3>
+          <div class="skill-group">
+            <span class="skill-label">Mantenimiento y Gestión de Activos</span>
+            <div class="skill-pills">
+              <span>Planeamiento y Programación</span>
+              <span>Confiabilidad</span>
+              <span>ISO 55000</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Análisis de Datos y Planificación</span>
+            <div class="skill-pills">
+              <span>Excel Avanzado (Macros, Tablas Dinámicas, Dashboards)</span>
+              <span>Power BI</span>
+              <span>MS Project</span>
+              <span>Lean Manufacturing</span>
+            </div>
+          </div>
+          <div class="skill-group">
+            <span class="skill-label">Diseño e Ingeniería CAD</span>
+            <div class="skill-pills">
+              <span>Autodesk Inventor (Intermedio)</span>
+              <span>AutoCAD 2D (Intermedio)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="contact-band" id="contacto">
+      <div class="container contact-inner">
+        <div>
+          <p class="eyebrow light">CONECTEMOS</p>
+          <h2>Disponible para prácticas preprofesionales</h2>
+          <p class="contact-sub">Los Olivos, Lima, Perú · +51 948 255 005</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button copper" href="https://www.linkedin.com/in/jair-arias-llontop/" target="_blank" rel="noopener noreferrer">
+            LinkedIn ↗
+          </a>
+          <a class="button outline-light" href="mailto:jair.arias2020@gmail.com">
+            jair.arias2020@gmail.com
+          </a>
+          <a class="button outline-light" href="https://github.com/JairArias20" target="_blank" rel="noopener noreferrer">
+            GitHub ↗
+          </a>
+        </div>
       </div>
     </section>
   </main>
-  <footer><div class="container footer-inner"><span>© 2026 Jair Arias</span><span>Publicado con GitHub Pages</span></div></footer>
+
+  <footer>
+    <div class="container footer-inner">
+      <span>© 2026 Jair A. Arias Llontop</span>
+      <span>Ingeniería Mecánica · UNAC — FIME</span>
+    </div>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
